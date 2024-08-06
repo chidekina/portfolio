@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+
+
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +10,11 @@
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
     border: 1px solid red;
+}
+
+body {
+    background-image: url(../img/background.png);
+    background-size: 100%;
 }
 
 #principal {
@@ -20,17 +27,45 @@
     & #foto {
         width: 150px;
         height: 150px;
-        background-color: red;
+        background-color: crimson;
         border-radius: 50%;
+        margin-top: 100PX;
+        margin-left: -16px;
     }
 
     & main {
         flex: 1;
+        & .selecoes{
+            color: white;
+            flex-direction: row;
+            gap: 10px;
+        }
+        & #sobre{
+            color: white;
+            margin-top: 20px;
+        }
+        & #descricao{
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 40px;
 
+            & i{
+                font-size: 40px;
+                margin-top: 60px;
+                margin-right: 20px;
+                justify-content: space-between;
+
+            }
+        }
         & #topo {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color: white;
+
+            & strong {
+                color: crimson;
+            }
 
             & div {
                 & h1 {
@@ -46,18 +81,20 @@
             & ul {
                 display: flex;
                 gap: 16px;
-                & li{
-                    & a{
+
+                & li {
+                    & a {
                         display: block;
-                        & box-icon{
+
+                        & box-icon {
                             width: 40px;
                             height: 40px;
                             padding: 8px;
                             text-align: center;
-                            background-color: grey;
+                            background-color: crimson;
                             border-radius: 50%;
                         }
-                        
+
                     }
                 }
             }
